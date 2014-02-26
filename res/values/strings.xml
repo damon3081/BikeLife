@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">自由单车</string>
+    <string name="action_settings">Settings</string>
+	<string name="version_lable">程序版本：</string>
+	<string name="about">关于</string>
+	<string name="about_desc">      \t\t基于常州永安公共自行车系统数据的实时公共自行车分布图。
+	    可以在地图上查看租赁点地址详情以及可停车和借车数量，目前支持的城市请查看官方网站http://www.ibike668.com/，
+	    日后会逐步增加可用的城市，如发现有问题或与官方网站地图显示不一致，请联系我，谢谢支持！
+	 \n\t\t联系邮箱：damon3081@gmail.com
+	</string>
+</resources>

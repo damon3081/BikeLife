@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    >
+	    
+   
+<LinearLayout 
+        android:id="@+id/layout"
+	    android:orientation="vertical"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/popbg"
+	    >
+	    
+    <TextView
+        android:id="@+id/textcache"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"    
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    
+    <TableRow 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="5dp"
+	        android:text="可借车数："
+	        android:textColor="@android:color/black"
+	        android:textSize="13sp" />
+
+	    <com.ant.liao.GifView
+	        android:id="@+id/bikenum"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom"/>
+
+	    <TextView
+	        android:id="@+id/bikenum1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="5dp"
+	        android:textColor="#0000ff"
+	        android:textSize="15sp"
+	        android:visibility="gone" />
+
+	</TableRow>
+	    
+    
+	<TableRow 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="5dp"
+	        android:text="可停车位："
+	        android:textColor="@android:color/black"
+	        android:textSize="13sp" />
+
+	    <com.ant.liao.GifView
+	        android:id="@+id/parkingnum"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom" />
+
+	    <TextView
+	        android:id="@+id/parkingnum1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="5dp"
+	        android:textColor="#0000ff"
+	        android:textSize="15sp"
+	        android:visibility="gone" />
+
+	</TableRow>
+	    
+	<TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"  
+        android:layout_marginBottom="20dp" 
+        android:text="地址："  
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+    </LinearLayout>
+    
+	<TextView
+        android:id="@+id/mylocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"    
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" 
+        android:visibility="gone"/>	
+
+    </LinearLayout>
+

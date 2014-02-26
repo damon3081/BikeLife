@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/city_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+    	xmlns:baiduadsdk="http://schemas.android.com/apk/res/com.damon.bikelife" >
+	
+        <ListView
+            android:id="@+id/city_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/pop_bg"
+	        android:cacheColorHint="@android:color/transparent"
+	        android:divider="@drawable/list_divider"
+	        android:dividerHeight="1dip"
+	        android:drawSelectorOnTop="true"
+	        android:transcriptMode="normal"
+	        android:focusable="true"
+	        android:paddingLeft="0dp"
+	        android:paddingRight="0dp"
+	        android:paddingBottom="60dp"
+	        android:scrollbars="none" />
+
+        <com.damon.bikelife.city.LetterView
+            android:id="@+id/cityLetterListView"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="60dp"
+             />  
+        <com.baidu.mobads.AdView
+	        android:id="@+id/adView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true"
+	        baiduadsdk:adId=""
+	        baiduadsdk:adSize="0" />
+        <!--注： baiduadsdk:adId可以指定为"",表示默认广告位-->
+    </RelativeLayout>
+    
