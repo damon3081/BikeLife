@@ -361,14 +361,16 @@ public class MapActivity extends AbActivity {
 				requestLocButton.setText("跟随");
                 mCurBtnType = E_BUTTON_TYPE.FOLLOW;
                 String city = location.getCity();
-                city = city.replace("市", "");
-                mAbTitleBar.setTitleText(city);
-                BikeInfo bikeInfo = getBikeInfo(city);
-                if(bikeInfo != null){
-                	curCity = bikeInfo.getCityName();
-					mAbTitleBar.hideWindow();
-					animateToCity(curCity);
-                }    
+                if(city != null){
+                	city = city.replace("市", "");
+                    mAbTitleBar.setTitleText(city);
+                    BikeInfo bikeInfo = getBikeInfo(city);
+                    if(bikeInfo != null){
+                    	curCity = bikeInfo.getCityName();
+    					mAbTitleBar.hideWindow();
+    					animateToCity(curCity);
+                    }
+                }
             }
             //首次定位完成
             isFirstLoc = false;
@@ -654,7 +656,7 @@ public class MapActivity extends AbActivity {
 			}else{
 				new  ImageDownLoaderTask2(2).execute(new String[]{url,id});
 			}
-				
+	
 			return true;
 		}
 		

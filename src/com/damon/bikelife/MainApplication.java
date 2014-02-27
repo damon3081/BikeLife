@@ -15,7 +15,7 @@ public class MainApplication extends Application {
     public boolean m_bKeyRight = true;
     BMapManager mBMapManager = null;
 
-    public static final String strKey = "AajlxI1uqQoQ9x4Gx9kwb0Ks";
+    public static final String strKey = "AajlxI1uqQoQ9x4Gx9kwb0Ks";//"tG1aAh6eOal7lmKmOxid1C1g";
 	
 	@Override
     public void onCreate() {
@@ -59,12 +59,12 @@ public class MainApplication extends Application {
         @Override
         public void onGetPermissionState(int iError) {
         	//非零值表示key验证未通过
-            if (iError != 0) {
+            /*if (iError != 0) {
                 //授权Key错误：
                 Toast.makeText(MainApplication.getInstance().getApplicationContext(), 
                         "请检查您的网络连接是否正常！", Toast.LENGTH_LONG).show();
                 MainApplication.getInstance().m_bKeyRight = false;
-            }
+            }*/
         }
     }
 }
